@@ -4,65 +4,71 @@
     <link rel="stylesheet" href="phone.css">
   </head>
   <body>
-    <div id="tab_bar">
-      <button class="tab" id="tab_1_button" style="font-size : 40px;">Dialer</button>
-      <button class="tab" id="tab_2_button" style="font-size : 40px;">Contact List</button>
-      <button class="tab" id="tab_3_button" style="font-size : 40px;">Add Contact</button>
+    <div id="tab_bar" role="navigation" aria-live="polite">
+      <button class="tab" id="tab_1_button" style="font-size : 40px;" accesskey="d">Dialer</button>
+      <button class="tab" id="tab_2_button" style="font-size : 40px;" accesskey="f">Contact List</button>
+      <button class="tab" id="tab_3_button" style="font-size : 40px;" accesskey="g">Add Contact</button>
+      <button class="tab" id="help_button" style="font-size : 40px;" accesskey="h">Help</button>
     </div>
-    <div id="content">
-      <div id="dialer">
-        <button class="number" id="one" style="font-size : 20px;">1</button>
-        <button class="number" id="two" style="font-size : 20px;">2</button>
-        <button class="number" id="three" style="font-size : 20px;">3</button>
-        <p></p>
-        <button class="number" id="four" style="font-size : 20px;">4</button>
-        <button class="number" id="five" style="font-size : 20px;">5</button>
-        <button class="number" id="six" style="font-size : 20px;">6</button>
-        <p></p>
-        <button class="number" id="seven" style="font-size : 20px;">7</button>
-        <button class="number" id="eight" style="font-size : 20px;">8</button>
-        <button class="number" id="nine" style="font-size : 20px;">9</button>
-        <p></p>
-        <button class="number" id="star" style="font-size : 20px;">*</button>
-        <button class="number" id="zero" style="font-size : 20px;">0</button>
-        <button class="number" id="pound" style="font-size : 20px;">#</button>
-        <p></p>
+    <div role="main" id="content">
+      <div id="dialer" aria-live="polite">
+        <table>
+          <tr>
+            <td <button class="number" id="one" style="font-size : 20px;" accesskey="1">1</button></td>
+            <td <button class="number" id="two" style="font-size : 20px;" accesskey="2">2</button></td>
+            <td <button class="number" id="three" style="font-size : 20px;" accesskey="3">3</button></td>
+          </tr>
+          <tr>
+            <td <button class="number" id="four" style="font-size : 20px;" accesskey="4">4</button></td>
+            <td <button class="number" id="five" style="font-size : 20px;" accesskey="5">5</button></td>
+            <td <button class="number" id="six" style="font-size : 20px;" accesskey="6">6</button></td>
+          </tr>
+          <tr>
+            <td <button class="number" id="seven" style="font-size : 20px;" accesskey="7">7</button></td>
+            <td <button class="number" id="eight" style="font-size : 20px;" accesskey="8">8</button></td>
+            <td <button class="number" id="nine" style="font-size : 20px;" accesskey="9">9</button></td>
+          </tr>
+          <tr>
+            <td <button class="number" id="star" style="font-size : 20px;" accesskey="u">*</button></td>
+            <td <button class="number" id="zero" style="font-size : 20px;" accesskey="0">0</button></td>
+            <td <button class="number" id="pound" style="font-size : 20px;" accesskey="e">#</button></td>
+          </tr>
+        </table>
         <input type="text" value="" id="inputText" style="width: 150px; font-size: 20px;" />
       </div>
 
-
-      <div id="contacts">
+      <div role="main" id="contacts">
         <table>
           <tr>
-            <td style="font-size : 40px;">Mom</td>
-            <td style="font-size : 40px;">Dad</td>
-            <td style="font-size : 40px;">Natalie</td>
+            <td class="contact" style="font-size : 40px;">Mom</td>
+            <td class="contact" style="font-size : 40px;">Dad</td>
+            <td class="contact" style="font-size : 40px;">Natalie</td>
           </tr>
           <tr>
-            <td style="font-size : 40px;">Taylor</td>
-            <td style="font-size : 40px;">Matt</td>
-            <td style="font-size : 40px;">Hans</td>
+            <td class="contact" style="font-size : 40px;">Taylor</td>
+            <td class="contact" style="font-size : 40px;">Matt</td>
+            <td class="contact" style="font-size : 40px;">Hans</td>
           </tr>
           <tr>
-            <td style="font-size : 40px;">Oskar</td>
-            <td style="font-size : 40px;">Lauren</td>
-            <td style="font-size : 40px;">Megan</td>
+            <td class="contact" style="font-size : 40px;">Oskar</td>
+            <td class="contact" style="font-size : 40px;">Lauren</td>
+            <td class="contact" style="font-size : 40px;">Megan</td>
           </tr>
           <tr>
-            <td style="font-size : 40px;">Elly</td>
-            <td style="font-size : 40px;">Jane</td>
-            <td style="font-size : 40px;">Mara</td>
+            <td class="contact" style="font-size : 40px;">Elly</td>
+            <td class="contact" style="font-size : 40px;">Jane</td>
+            <td class="contact" style="font-size : 40px;">Mara</td>
           </tr>
           <tr>
-            <td style="font-size : 40px;">Molly</td>
-            <td style="font-size : 40px;">Georgia</td>
-            <td style="font-size : 40px;">Tyler</td>
+            <td class="contact" style="font-size : 40px;">Molly</td>
+            <td class="contact" style="font-size : 40px;">Georgia</td>
+            <td class="contact" style="font-size : 40px;">Tyler</td>
           </tr>
         </table>
       </div>
 
 
-      <div id="add_contact">
+      <div role="main" id="add_contact">
         <form>
           Name: <input type="text"></input> <br>
           Phone Number: <input type="text"></input> <br>
@@ -71,6 +77,91 @@
         </form>
       </div>
     </div>
+
+      <div role="main" id="help">
+        <h2>Accessibility Features</h2>
+        <ul>
+          <li>Tab control</li>
+          <li>Access keys for tabs and dialer numbers</li>
+          <li>Accessible dialer table</li>
+          <li>Captioned images</li>
+          <li>ARIA landmark roles</li>
+          <li>ARIA live regions</li>
+        </ul>
+        <h2>Keyboard Shortcuts (ctrl+alt+)</h2>
+        <table>
+          <tr>
+            <td class="access_key" style="font-size : 10px; font-weight: bold">Dialer</td>
+            <td class="access_key" style="font-size : 10px;">d</td>
+          </tr>
+          <tr>
+            <td class="access_key" style="font-size : 10px; font-weight: bold">Contacts</td>
+            <td class="access_key" style="font-size : 10px;">f</td>
+          </tr>
+          <tr>
+            <td class="access_key" style="font-size : 10px; font-weight: bold">Add Contact</td>
+            <td class="access_key" style="font-size : 10px;">g</td>
+          </tr>
+          <tr>
+            <td class="access_key" style="font-size : 10px; font-weight: bold">Help</td>
+            <td class="access_key" style="font-size : 10px;">h</td>
+          </tr>
+          <tr>
+            <td class="access_key" style="font-size : 10px; font-weight: bold">*</td>
+            <td class="access_key" style="font-size : 10px;">u</td>
+          </tr>
+          <tr>
+            <td class="access_key" style="font-size : 10px; font-weight: bold">#</td>
+            <td class="access_key" style="font-size : 10px;">e</td>
+          </tr>
+        </table>
+        <table style="margin-left: 110px; margin-top: -195px;">
+          <tr>
+            <td class="access_key" style="font-size : 10px; font-weight: bold">1</td>
+            <td class="access_key" style="font-size : 10px;">1</td>
+          </tr>
+          <tr>
+            <td class="access_key" style="font-size : 10px; font-weight: bold">2</td>
+            <td class="access_key" style="font-size : 10px;">2</td>
+          </tr>
+          <tr>
+            <td class="access_key" style="font-size : 10px; font-weight: bold">3</td>
+            <td class="access_key" style="font-size : 10px;">3</td>
+          </tr>
+          <tr>
+            <td class="access_key" style="font-size : 10px; font-weight: bold">4</td>
+            <td class="access_key" style="font-size : 10px;">4</td>
+          </tr>
+          <tr>
+            <td class="access_key" style="font-size : 10px; font-weight: bold">5</td>
+            <td class="access_key" style="font-size : 10px;">5</td>
+          </tr>
+          <tr>
+            <td class="access_key" style="font-size : 10px; font-weight: bold">6</td>
+            <td class="access_key" style="font-size : 10px;">6</td>
+          </tr>
+        </table>
+        <table style="margin-left: 220px; margin-top: -195px;">
+          <tr>
+            <td class="access_key" style="font-size : 10px; font-weight: bold">7</td>
+            <td class="access_key" style="font-size : 10px;">7</td>
+          </tr>
+          <tr>
+            <td class="access_key" style="font-size : 10px; font-weight: bold">8</td>
+            <td class="access_key" style="font-size : 10px;">8</td>
+          </tr>
+          <tr>
+            <td class="access_key" style="font-size : 10px; font-weight: bold">9</td>
+            <td class="access_key" style="font-size : 10px;">9</td>
+          </tr>
+          <tr>
+            <td class="access_key" style="font-size : 10px; font-weight: bold">0</td>
+            <td class="access_key" style="font-size : 10px;">0</td>
+          </tr>
+        </table>
+        <img role="complementary" src="puppies.jpg" alt"Cute golden retriever puppies" style="margin-left:370px; margin-top:-400px" longdesc="Image of two golden retriever puppies with their tongues out, hanging over a ledge, with excited expressions."</img>
+        <h5 role="contentinfo" style="margin-left: 375px; margin-top: -30px; font-weight:lighter">Shutterstock</h5>
+      </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="phone.js"></script>
