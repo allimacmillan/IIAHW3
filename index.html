@@ -34,6 +34,7 @@
             <td <button class="number" id="pound" style="font-size : 20px;" accesskey="e">#</button></td>
           </tr>
         </table>
+        <label hidden for="inputText">Dialer Number</label>
         <input type="text" value="" id="inputText" style="width: 150px; font-size: 20px;" />
       </div>
 
@@ -70,10 +71,13 @@
 
       <div role="main" id="add_contact">
         <form>
-          Name: <input type="text"></input> <br>
-          Phone Number: <input type="text"></input> <br>
-          Email: <input type="text"></input> <br>
-          <input type="submit" id="submit"></input>
+          <label for="nameInput">Name</label>
+          <input id="nameInput" type="text"></input> <br>
+          <label for="phoneNumberInput">Phone Number</label>
+          <input id="phoneNumberInput" type="text"></input> <br>
+          <label for="emailInput">Name</label>
+          <input id="emailInput" type="text"></input> <br>
+          <input type="submit" value="Submit"></input>
         </form>
       </div>
     </div>
@@ -159,7 +163,7 @@
             <td class="access_key" style="font-size : 10px;">0</td>
           </tr>
         </table>
-        <img role="complementary" src="puppies.jpg" alt"Cute golden retriever puppies" style="margin-left:370px; margin-top:-400px" longdesc="Image of two golden retriever puppies with their tongues out, hanging over a ledge, with excited expressions."</img>
+        <img role="complementary" src="puppies.jpg" alt="Cute golden retriever puppies" style="margin-left:370px; margin-top:-400px" longdesc="puppiesDesc.txt"</img>
         <h5 role="contentinfo" style="margin-left: 375px; margin-top: -30px; font-weight:lighter">Shutterstock</h5>
       </div>
 
